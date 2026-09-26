@@ -2076,6 +2076,21 @@ html.pdf-modal-open #cursorRing {
   opacity: 1;
 }
 
+/* Disable JSON xray hover effect on touch devices & mobile */
+@media (hover: none), (max-width: 768px) {
+  .case-json-xray {
+    display: none !important;
+  }
+  .case-study-card:hover .case-card-header,
+  .case-study-card:hover .case-grid-3 {
+    opacity: 1;
+    filter: none;
+  }
+  .case-study-card:hover {
+    transform: none;
+  }
+}
+
 
 
 .case-card-header {
